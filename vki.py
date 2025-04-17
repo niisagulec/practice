@@ -1,10 +1,15 @@
-
+yas = int(input("yasinizi giriniz: "))
 kilo = float(input("kilonuzu girin(kg): "))
 boy = float(input("boyunuzu girin (metre): "))
 
 vki = kilo / (boy**2)
 
 print("Beden kitle indeksiniz: ", round(vki,2))
+
+if yas >= 20:
+    print("askere gitme yasi gelmis.")
+else:
+    print("askere gitme yasi henüz gelmedi.")
 
 if vki < 18.5:
     print("zayıfsınız.")
